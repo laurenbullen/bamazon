@@ -18,7 +18,7 @@ connection.connect(function(err){
 var makeTable = function(){
     connection.query("select * from products", function(err, res){
         console.table(res);
-        selectItem();
+        selectItem(res);
     })
 }
 
@@ -81,6 +81,7 @@ var makePurchase = function(product, quantity){
         console.log("");
         console.log(`Successfully purchased ${quantity} ${product.product_name}(s)!`)
         console.log("")
+        makeTable()
     })
 }
 
