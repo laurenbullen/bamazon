@@ -1,8 +1,8 @@
 # Bamazon
-##Purpose
+## Purpose
 To create an Amazon-like marketplace that uses Node.js and MySQL that takes in orders from customers and depletes the stock numbers when a purchase is made.
 
-##Overview
+## Overview
 
 1. Create a database called `bamazon`.
 2. Populate create a table called `products`.
@@ -19,8 +19,6 @@ To create an Amazon-like marketplace that uses Node.js and MySQL that takes in o
    * stock_quantity (how much of the product is available in stores)
 
 4. Add 10 items to populate the `products` table.
-
-![image](https://{Screenshots/database})
 
 5. Then create Node application bamazon.js. Running this application will show a table with all of the 10 products and their associated details (item_id, product_name, department_name, price, stock_quantity).
 
